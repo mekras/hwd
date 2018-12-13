@@ -1,0 +1,3 @@
+[submodule "develop/dev-tools"]
+	path = develop/dev-tools
+	url = https://github.com/dobrosite/dev-tools.git
