@@ -6,4 +6,5 @@
 
    startup
    recipients
-   intro
+   intro/main
+   intro/article

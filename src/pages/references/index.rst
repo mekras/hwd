@@ -6,6 +6,6 @@
 
    recipients
    formats
-   doc-structure
+   document_structure
    intro
    guide
