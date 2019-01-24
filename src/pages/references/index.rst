@@ -4,8 +4,10 @@
 .. toctree::
    :maxdepth: 2
 
-   recipients
-   formats
-   document_structure
-   intro
-   guide
+   glossary
+   recipients/index
+   articles/index
+   formats/index
+   locations/index
+   structure/index
+   sections/index

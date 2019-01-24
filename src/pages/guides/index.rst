@@ -5,6 +5,6 @@
    :maxdepth: 2
 
    startup
+   advices
    recipients
-   intro/main
-   intro/article
+   intro/index

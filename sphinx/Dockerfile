@@ -1,32 +1,15 @@
-#+++++++++++++++++++++++++++++++++++++++
-# Dockerfile for webdevops/sphinx:latest
-#    -- automatically generated  --
-#+++++++++++++++++++++++++++++++++++++++
+FROM ubuntu:latest
 
-FROM webdevops/bootstrap:alpine
-
-RUN set -x \
-    && apk-install \
-    python \
-    py-crypto \
-    py2-pip \
-    py-pillow \
-    py-yaml \
-    py-sphinx \
-    py-sphinx_rtd_theme \
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    python3-sphinx \
+    sphinx-intl \
+    python3-sphinx-rtd-theme \
+    python3-sphinxcontrib.plantuml \
+    python-pip \
+    python-setuptools \
     graphviz \
     ttf-dejavu \
     && pip install --upgrade pip \
     && hash -r \
-    && pip install --upgrade sphinxcontrib-googlechart \
-    && pip install --upgrade sphinxcontrib-googlemaps \
-    && pip install --upgrade sphinxcontrib-httpdomain \
-    && pip install --upgrade sphinxcontrib-slide \
     && pip install --upgrade sphinx-autobuild \
-    && pip install --upgrade recommonmark \
-    && pip install t3SphinxThemeRtd \
-    && pip install t3fieldlisttable \
-    && pip install t3tablerows \
-    && pip install t3targets \
-    && docker-run-bootstrap \
-    && docker-image-cleanup
+    && rm -r /var/lib/apt/lists/*

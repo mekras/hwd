@@ -40,6 +40,7 @@ release = '2018.12.24'
 # ones.
 extensions = [
     'sphinx.ext.todo',
+    'sphinxcontrib.plantuml',
 ]
 
 # Add any paths that contain templates here, relative to this directory.
