@@ -11,36 +11,16 @@ services:
     ## Веб-сервер и сам сайт.
     web:
         restart: always
-        image: dobrosite/php:${DOCKER_PHP_VERSION}-apache
+        image: nginx:latest
         expose:
             # Открываем порт для nginx-proxy.
             - 80
         environment:
-            APACHE_MODULES: ${DOCKER_APACHE_MODULES}
-            FILE_OWNER_UID: ${UID}
-            PHP_EXTENSIONS: ${DOCKER_PHP_EXTENSIONS}
-            PHP_INI_SETTINGS: ${DOCKER_PHP_INI_SETTINGS}
-            VIRTUAL_HOST: ${SITE_DOMAIN}, www.${SITE_DOMAIN}
+            VIRTUAL_HOST: xn--d1alp.xn--80asehdb
         volumes:
-            - './htdocs:/var/www/html'
+            - './htdocs:/usr/share/nginx/html:ro'
         networks:
-            - default
             - nginx-proxy
-
-    ## Сервер MySQL/MariaDB.
-    mysql:
-        restart: always
-        image: dobrosite/mysql:${DOCKER_MYSQL_VERSION}
-        environment:
-            FILE_OWNER_UID: ${UID}
-            MYSQL_ROOT_PASSWORD: root
-            # Настройка имени БД сайта и доступа к ней.
-            MYSQL_DATABASE: database
-            MYSQL_USER: user
-            MYSQL_PASSWORD: password
-        volumes:
-            # Папка для размещения файлов БД.
-            - './docker/var/db:/var/lib/mysql'
 
 # Дополнительные виртуальные сети.
 networks:
