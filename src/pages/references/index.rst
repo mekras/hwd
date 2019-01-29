@@ -11,3 +11,4 @@
    locations/index
    structure/index
    sections/index
+   packages/index

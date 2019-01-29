@@ -8,6 +8,9 @@
    :maxdepth: 1
 
    html
+   latex
    markdown
+   odt
    pdf
+   restructuredtext
    wiki

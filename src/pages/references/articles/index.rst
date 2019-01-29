@@ -7,4 +7,5 @@
    intro
    reference
    guide
+   readme/index
    glossary
