@@ -79,13 +79,18 @@ today_fmt = '%d.%m.%Y'
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
 #
-html_theme = 'sphinxdoc'
+#html_theme = 'sphinxdoc'
+html_theme = 'sphinx_rtd_theme'
 
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
 # documentation.
 #
-# html_theme_options = {}
+html_theme_options = {
+#    'style_external_links': True,
+#    'titles_only': True,
+#    'github_url': 'https://github.com/mekras/hwd'
+}
 
 # The "title" for HTML documentation generated with Sphinx’s own templates. This is appended to the
 # <title> tag of individual pages, and used in the navigation bar as the "topmost" element. It
