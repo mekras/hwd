@@ -3,22 +3,6 @@
 ### Файлы IDE
 /.idea
 
-### Файлы, создаваемые менеджерами пакетов
-/htdocs/node_modules
-/htdocs/vendor/*
-!/htdocs/vendor/.htaccess
-/node_modules
-/vendor
-
-### Настройки окружения
-# Локальные настройки сборки
-Makefile.local
-
-### Файлы данных
-## Wordpress
-/htdocs/wp-content/uploads/*
-!/htdocs/wp-content/uploads/.htaccess
-
 ### Временные файлы
 *.bak
 *.tmp

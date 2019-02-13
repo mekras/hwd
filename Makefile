@@ -2,34 +2,69 @@
 ## Файл GNU Make для автоматизации некоторых действий при работе с проектом.
 ##
 
-.DEFAULT_GOAL := build
+.DEFAULT_GOAL := all
 
 ## Корневая папка проекта.
 PROJECT_DIR := $(realpath $(dir $(realpath $(lastword $(MAKEFILE_LIST)))))
+
+## Папка исходных файлов.
+SOURCE_DIR := $(PROJECT_DIR)/src
+
 ## Папка для размещения собранных документов.
-DOCS_DIR := $(PROJECT_DIR)/htdocs
+TARGET_DIR := $(PROJECT_DIR)/htdocs
 ## UID владельца папки собранных документов.
-DOCS_DIR_UID ?= $(shell stat --format=%u $(DOCS_DIR))
+TARGET_DIR_UID ?= $(shell stat --format=%u $(TARGET_DIR))
 ## GID владельца папки собранных документов.
-DOCS_DIR_GID ?= $(shell stat --format=%g $(DOCS_DIR))
+TARGET_DIR_GID ?= $(shell stat --format=%g $(TARGET_DIR))
+
+## Основное имя для скачиваемых документов.
+DOC_BASENAME := write-docs
 
 ## Папка с файлами Docker для сборки образа Sphinx.
 SPHINX_DOCKER_DIR := sphinx
 ## Имя образа Docker со Sphinx.
 SPHINX_DOCKER_IMAGE := hwd-sphinx
 
-.PHONY: build
-build: build-sphinx
-	docker run --user $(DOCS_DIR_UID):$(DOCS_DIR_GID)  --rm \
-		-v $(PROJECT_DIR)/src/pages:/opt/docs \
-		-v $(DOCS_DIR):/opt/build \
-		$(SPHINX_DOCKER_IMAGE) sphinx-build /opt/docs /opt/build
+## Папка внутри котнейра, куда монтировать папку src.
+DOCKER_SRC_DIR := /opt/docs
+## Папка внутри котнейра, куда монтировать папку htdocs.
+DOCKER_DST_DIR := /opt/build
+
+## Выполняет единичную команду оболочки в контейнере.
+##
+## @param $(1) Команда, которую надо выполнить.
+##
+docker-run = docker run --user $(TARGET_DIR_UID):$(TARGET_DIR_GID) --rm \
+	-v $(PROJECT_DIR)/src/pages:/opt/docs -v $(TARGET_DIR):/opt/build \
+	$(SPHINX_DOCKER_IMAGE) $(1)
+
+.PHONY: all
+all: html pdf
 
 .PHONY: build-sphinx
 build-sphinx:
 	$(if $(shell docker images --quiet $(SPHINX_DOCKER_IMAGE)),,\
 		docker build --rm --tag $(SPHINX_DOCKER_IMAGE) $(SPHINX_DOCKER_DIR))
 
+.PHONY: clean
+clean:
+	find $(TARGET_DIR) -depth -mindepth 1 ! -name .gitignore ! -name robots.txt -delete
+
 .PHONY: dev-server
-dev-server:
+dev-server: ## Запускает сервер для разработки.
 	docker-compose -f docker-compose.dev.yml up -d
+
+.PHONY: html
+html: build-sphinx ## Собирает документацию в HTML.
+	$(call docker-run,sphinx-build $(DOCKER_SRC_DIR) $(DOCKER_DST_DIR))
+
+.PHONY:
+pdf: $(TARGET_DIR)/$(DOC_BASENAME).pdf ## Создаёт документ PDF.
+
+$(TARGET_DIR)/$(DOC_BASENAME).pdf: build-sphinx
+	$(call docker-run,sh -c "cd /tmp && \
+		sphinx-build -b latex $(DOCKER_SRC_DIR) . && \
+		pdflatex $(DOC_BASENAME).tex -interaction batchmode && \
+		makeindex $(DOC_BASENAME).idx && \
+		pdflatex $(DOC_BASENAME).tex -interaction batchmode && \
+		mv $(DOC_BASENAME).pdf $(DOCKER_DST_DIR)/")
