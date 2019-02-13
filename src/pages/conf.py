@@ -15,18 +15,19 @@
 # import os
 # import sys
 # sys.path.insert(0, os.path.abspath('.'))
+import datetime
 
 
 # -- Project information -----------------------------------------------------
 
-project = 'HWD'
+project = 'КПД'
 copyright = '2018, Михаил Красильников'
 author = 'Михаил Красильников'
 
 # The short X.Y version
-version = '2018.12'
+version = datetime.datetime.now().strftime("%y.%m")
 # The full version, including alpha/beta/rc tags
-release = '2018.12.24'
+release = datetime.datetime.now().strftime("%d.%m.%y")
 
 
 # -- General configuration ---------------------------------------------------
@@ -146,7 +147,7 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-    (master_doc, 'HWD.tex', 'HWD Documentation',
+    (master_doc, 'write-docs.tex', 'Как писать документацию',
      'Михаил Красильников', 'manual'),
 ]
 
@@ -156,7 +157,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, 'hwd', 'HWD Documentation',
+    (master_doc, 'hwd', 'Как писать документацию',
      [author], 1)
 ]
 
@@ -167,7 +168,7 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-    (master_doc, 'HWD', 'HWD Documentation',
+    (master_doc, 'HWD', 'Как писать документацию',
      author, 'HWD', 'One line description of project.',
      'Miscellaneous'),
 ]
