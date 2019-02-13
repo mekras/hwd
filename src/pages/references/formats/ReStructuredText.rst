@@ -32,6 +32,12 @@ reStructuredText может быть преобразован в :doc:`PDF </ref
 * Простой синтаксис.
 * Поддерживается `GitHub <https://github.com/>`_ и `Bitbucket <https://bitbucket.org/>`_.
 
+Область применения
+------------------
+
+* :doc:`/references/packages/library`
+* :doc:`/references/articles/readme/index`
+
 Инструменты
 -----------
 
