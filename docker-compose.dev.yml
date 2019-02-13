@@ -6,10 +6,9 @@ version: '3.2'
 
 services:
 
-    ## Веб-сервер.
-    web:
-        build:
-            context: sphinx
+    ## Сервер для разработки.
+    dev-server:
+        image: mekras/sphinx-doc:latest
         ports:
             - 8000:8000
         volumes:

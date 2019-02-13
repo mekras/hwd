@@ -20,10 +20,8 @@ TARGET_DIR_GID ?= $(shell stat --format=%g $(TARGET_DIR))
 ## Основное имя для скачиваемых документов.
 DOC_BASENAME := write-docs
 
-## Папка с файлами Docker для сборки образа Sphinx.
-SPHINX_DOCKER_DIR := sphinx
-## Имя образа Docker со Sphinx.
-SPHINX_DOCKER_IMAGE := hwd-sphinx
+## Образ Docker со Sphinx.
+SPHINX_DOCKER_IMAGE := mekras/sphinx-doc:latest
 
 ## Папка внутри котнейра, куда монтировать папку src.
 DOCKER_SRC_DIR := /opt/docs
@@ -39,29 +37,24 @@ docker-run = docker run --user $(TARGET_DIR_UID):$(TARGET_DIR_GID) --rm \
 	$(SPHINX_DOCKER_IMAGE) $(1)
 
 .PHONY: all
-all: html pdf
+all: html pdf ## Собирает все конечные файлы.
 
-.PHONY: build-sphinx
-build-sphinx:
-	$(if $(shell docker images --quiet $(SPHINX_DOCKER_IMAGE)),,\
-		docker build --rm --tag $(SPHINX_DOCKER_IMAGE) $(SPHINX_DOCKER_DIR))
-
-.PHONY: clean
+.PHONY: clean ## Очищает все результаты сборки.
 clean:
 	find $(TARGET_DIR) -depth -mindepth 1 ! -name .gitignore ! -name robots.txt -delete
 
-.PHONY: dev-server
-dev-server: ## Запускает сервер для разработки.
-	docker-compose -f docker-compose.dev.yml up -d
+.PHONY: start-server
+start-server: ## Запускает сервер разработки.
+	docker-compose -f docker-compose.dev.yml up
 
 .PHONY: html
-html: build-sphinx ## Собирает документацию в HTML.
+html: ## Собирает документацию в HTML.
 	$(call docker-run,sphinx-build $(DOCKER_SRC_DIR) $(DOCKER_DST_DIR))
 
 .PHONY:
 pdf: $(TARGET_DIR)/$(DOC_BASENAME).pdf ## Создаёт документ PDF.
 
-$(TARGET_DIR)/$(DOC_BASENAME).pdf: build-sphinx
+$(TARGET_DIR)/$(DOC_BASENAME).pdf:
 	$(call docker-run,sh -c "cd /tmp && \
 		sphinx-build -b latex $(DOCKER_SRC_DIR) . && \
 		pdflatex $(DOC_BASENAME).tex -interaction batchmode && \
