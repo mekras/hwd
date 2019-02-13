@@ -1,13 +1,30 @@
 FROM ubuntu:latest
 
-RUN apt-get update && apt-get install -y --no-install-recommends \
-    python3-sphinx \
-    sphinx-intl \
-    python3-sphinx-rtd-theme \
-    python3-sphinxcontrib.plantuml \
+RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends \
+    graphviz \
+    lmodern \
+    luatex \
     python-pip \
     python-setuptools \
-    graphviz \
+    python3-sphinx \
+    python3-sphinx-rtd-theme \
+    python3-sphinxcontrib.plantuml \
+    sphinx-intl \
+    tex-common \
+    texlive \
+    texlive-binaries \
+    texlive-extra-utils \
+    texlive-fonts-extra \
+    texlive-full \
+    texlive-lang-cyrillic \
+    texlive-latex-base \
+    texlive-latex-base-doc \
+    texlive-latex-extra \
+    texlive-latex-recommended \
+    texlive-luatex \
+    texlive-pstricks \
+    texlive-science \
+    texlive-xetex \
     ttf-dejavu \
     && pip install --upgrade pip \
     && hash -r \
