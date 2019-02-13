@@ -18,6 +18,7 @@
    theory/index
    guides/index
    references/index
+   resources
    todo
 
 * :ref:`genindex`
