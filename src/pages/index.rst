@@ -18,6 +18,7 @@
    theory/index
    guides/index
    references/index
+   templates/index
    resources
    legal
    todo
