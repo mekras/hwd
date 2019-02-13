@@ -25,9 +25,9 @@ copyright = '2018, Михаил Красильников'
 author = 'Михаил Красильников'
 
 # The short X.Y version
-version = datetime.datetime.now().strftime("%y.%m")
+version = datetime.datetime.now().strftime("%d.%m.%Y")
 # The full version, including alpha/beta/rc tags
-release = datetime.datetime.now().strftime("%d.%m.%y")
+release = datetime.datetime.now().strftime("%d.%m.%Y")
 
 
 # -- General configuration ---------------------------------------------------
@@ -45,7 +45,7 @@ extensions = [
 ]
 
 # Add any paths that contain templates here, relative to this directory.
-templates_path = ['_templates']
+#templates_path = ['_templates']
 
 # The suffix(es) of source filenames.
 # You can specify multiple suffix as a list of string:
