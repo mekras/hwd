@@ -9,7 +9,7 @@
 
 .. admonition:: Скачать одним файлом
 
-`   * `PDF </write-docs.pdf>`_ (360 КиБ)
+   * `PDF </write-docs.pdf>`_ (360 КиБ)
 
 .. toctree::
    :maxdepth: 2
