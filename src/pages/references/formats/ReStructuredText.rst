@@ -19,8 +19,7 @@ ReStructuredText
 --------
 
 reStructuredText может быть преобразован в :doc:`PDF </references/formats/PDF>`,
-:doc:`HTML </references/formats/HTML>`, :doc:`ODT </references/formats/ODT>`,
-:doc:`LaTeX </references/formats/LaTeX>` и другие.
+:doc:`HTML </references/formats/HTML>`, OpenDocument, LaTeX и другие.
 
 * `Официальная документация <http://docutils.sourceforge.net/rst.html>`_ (англ.)
 * `PEP 287 — reStructuredText Docstring Format <http://www.python.org/dev/peps/pep-0287/>`_ (англ.)

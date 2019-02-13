@@ -8,10 +8,7 @@
    :maxdepth: 1
 
    HTML
-   LaTeX
    Markdown
-   ODT
    PDF
    ReStructuredText
    txt
-   wiki
