@@ -8,7 +8,7 @@ README
 которой он размещён. Чаще всего такой файл помещается в корень проекта и выполняет роль
 :doc:`введения </references/articles/intro>`.
 
-.. contents:: Оглавление
+.. contents:: Содержание
    :local:
    :depth: 2
    :backlinks: none
