@@ -6,5 +6,5 @@
 
    why
    goals
-   classification
    principles
+   classification
