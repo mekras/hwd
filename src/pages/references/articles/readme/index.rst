@@ -16,7 +16,7 @@ README
 Форматы
 -------
 
-Главными критериями при выборе :trem:`формата <Формат документации>` должны быть:
+Главными критериями при выборе :term:`формата <Формат документации>` должны быть:
 
 #. простота чтения файла адресатом;
 #. простота обновления файла автором.
@@ -24,8 +24,8 @@ README
 Распространённые форматы:
 
 * :doc:`TXT </references/formats/txt>` (`README.txt`)
-* :doc:`Markdown </references/formats/markdown>` (`README.md`)
-* :doc:`ReStructuredText </references/formats/restructuredtext>` (`README.rst`)
+* :doc:`Markdown </references/formats/Markdown>` (`README.md`)
+* :doc:`ReStructuredText </references/formats/ReStructuredText>` (`README.rst`)
 
 
 Виды README
