@@ -5,9 +5,7 @@
    :maxdepth: 2
 
    intro
-   why
-   goals
-   principles
+   theory/index
    guides/index
    references/index
 

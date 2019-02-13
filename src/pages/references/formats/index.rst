@@ -7,10 +7,11 @@
 .. toctree::
    :maxdepth: 1
 
-   html
-   latex
-   markdown
-   odt
-   pdf
-   restructuredtext
+   HTML
+   LaTeX
+   Markdown
+   ODT
+   PDF
+   ReStructuredText
+   txt
    wiki

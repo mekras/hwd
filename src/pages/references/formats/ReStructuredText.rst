@@ -9,9 +9,9 @@
 файла: .rst) — облегчённый язык разметки. Хорошо применим для создания простых веб-страниц и других
 документов, а также в качестве вспомогательного языка при написании комментариев в программном коде.
 
-reStructuredText может быть преобразован в :doc:`PDF </references/formats/pdf>`,
-:doc:`HTML </references/formats/html>`, :doc:`ODT </references/formats/odt>`,
-:doc:`LaTeX </references/formats/latext>` и другие.
+reStructuredText может быть преобразован в :doc:`PDF </references/formats/PDF>`,
+:doc:`HTML </references/formats/HTML>`, :doc:`ODT </references/formats/ODT>`,
+:doc:`LaTeX </references/formats/LaTeX>` и другие.
 
 .. contents:: Оглавление
    :local:
