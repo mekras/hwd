@@ -9,16 +9,17 @@ README для библиотеки
 
 .. seealso::
 
-   * :doc:`/references/articles/readme/index`
+   * :doc:`/templates/product/library/php/readme` (шаблон)
+   * :doc:`/references/articles/readme/index` (справочник)
 
 Форматы
 -------
 
 Предпочтительными форматами являются:
 
-* :doc:`TXT </references/formats/txt>`
-* :doc:`Markdown </references/formats/markdown>`
-* :doc:`ReStructuredText </references/formats/restructuredtext>`
+* :doc:`Markdown </references/formats/Markdown>`
+* :doc:`ReStructuredText </references/formats/ReStructuredText>`
+* :doc:`Простой текст </references/formats/txt>`
 
 Разделы
 -------
