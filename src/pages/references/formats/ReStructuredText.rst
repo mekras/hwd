@@ -1,19 +1,16 @@
-Документация в ReStructuredText (.rst)
-======================================
+ReStructuredText
+================
 
 .. index::
    Формат документации
    ReStructuredText
+   ReST
 
 `ReStructuredText <https://ru.wikipedia.org/wiki/ReStructuredText>`_ (сокращение: ReST, расширение
 файла: .rst) — облегчённый язык разметки. Хорошо применим для создания простых веб-страниц и других
 документов, а также в качестве вспомогательного языка при написании комментариев в программном коде.
 
-reStructuredText может быть преобразован в :doc:`PDF </references/formats/PDF>`,
-:doc:`HTML </references/formats/HTML>`, :doc:`ODT </references/formats/ODT>`,
-:doc:`LaTeX </references/formats/LaTeX>` и другие.
-
-.. contents:: Оглавление
+.. contents:: Содержание
    :local:
    :depth: 2
    :backlinks: none
@@ -21,26 +18,28 @@ reStructuredText может быть преобразован в :doc:`PDF </ref
 Описание
 --------
 
+reStructuredText может быть преобразован в :doc:`PDF </references/formats/PDF>`,
+:doc:`HTML </references/formats/HTML>`, :doc:`ODT </references/formats/ODT>`,
+:doc:`LaTeX </references/formats/LaTeX>` и другие.
+
+* `Официальная документация <http://docutils.sourceforge.net/rst.html>`_ (англ.)
+* `PEP 287 — reStructuredText Docstring Format <http://www.python.org/dev/peps/pep-0287/>`_ (англ.)
+
 Преимущества
 ------------
 
-* Удобочитаемость
-* Простота
-* Масштабируемость
-* Расширяемость
-* Независимость от выходного формата
-
-Недостатки
-----------
-
+* Исходный код документов легко читается без обработки.
+* Простой синтаксис.
+* Поддерживается `GitHub <https://github.com/>`_ и `Bitbucket <https://bitbucket.org/>`_.
 
 Инструменты
 -----------
 
 * `Sphinx <http://www.sphinx-doc.org/>`_
-* `Docutils, <https://www.openhub.net/p/docutils>`_
+* `Docutils <https://www.openhub.net/p/docutils>`_
 
 См. также
 ---------
 
-* `PEP 287 — reStructuredText Docstring Format <http://www.python.org/dev/peps/pep-0287/>`_
+* :doc:`Markdown`
+* :doc:`txt`
