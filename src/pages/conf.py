@@ -71,6 +71,8 @@ exclude_patterns = []
 # The name of the Pygments (syntax highlighting) style to use.
 pygments_style = 'sphinx'
 
+# https://www.sphinx-doc.org/en/master/usage/configuration.html#confval-today_fmt
+today_fmt = '%d.%m.%Y'
 
 # -- Options for HTML output -------------------------------------------------
 
