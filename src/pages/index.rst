@@ -19,6 +19,7 @@
    guides/index
    references/index
    resources
+   legal
    todo
 
 * :ref:`genindex`

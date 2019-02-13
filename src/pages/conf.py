@@ -20,8 +20,8 @@ import datetime
 
 # -- Project information -----------------------------------------------------
 
-project = 'КПД'
-copyright = '2018, Михаил Красильников'
+project = 'Как писать документацию'
+copyright = '2018, CC BY-NC-SA, Михаил Красильников'
 author = 'Михаил Красильников'
 
 # The short X.Y version
