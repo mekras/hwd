@@ -9,7 +9,7 @@ README для библиотеки
 
 .. seealso::
 
-   * :doc:`/templates/product/library/php/readme` (шаблон)
+   * :doc:`/templates/product/library/index` (шаблоны)
    * :doc:`/references/articles/readme/index` (справочник)
 
 Форматы

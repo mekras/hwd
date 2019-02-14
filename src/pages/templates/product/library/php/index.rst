@@ -4,6 +4,6 @@ PHP
 В этом разделе собраны шаблоны документации к библиотекам на PHP.
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
 
-   readme/index
+   readme
