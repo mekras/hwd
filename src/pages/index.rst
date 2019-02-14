@@ -9,7 +9,7 @@
 
 .. hint::
 
-   * Нет времени? Воспользуйтесь :doc:`быстрым поиском решения </guides/quick-solution>`.
+   * Нет времени? Воспользуйтесь :doc:`быстрым поиском решения </guides/quick-solution/index>`.
    * Скачать всё одним документом: `PDF </write-docs.pdf>`_.
 
 .. toctree::

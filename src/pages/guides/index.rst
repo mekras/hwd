@@ -4,7 +4,7 @@
 .. toctree::
    :maxdepth: 2
 
-   quick-solution
+   quick-solution/index
    startup
    advices
    recipients
