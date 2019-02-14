@@ -87,9 +87,9 @@ html_theme = 'sphinx_rtd_theme'
 # documentation.
 #
 html_theme_options = {
-#    'style_external_links': True,
-#    'titles_only': True,
-#    'github_url': 'https://github.com/mekras/hwd'
+    'style_external_links': True,
+    'titles_only': True,
+#    'github_url': 'https://github.com/mekras/hwd/'
 }
 
 # The "title" for HTML documentation generated with Sphinx’s own templates. This is appended to the
