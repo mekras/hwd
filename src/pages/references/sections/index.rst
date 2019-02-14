@@ -6,4 +6,7 @@
 
    intro
    toc
+   installation
+   usage
+   appendix
    see_also
