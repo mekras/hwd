@@ -1,7 +1,7 @@
 Общие советы
 ============
 
-.. contents:: Оглавление
+.. contents:: Содержание
    :local:
    :depth: 2
    :backlinks: none

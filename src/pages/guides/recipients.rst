@@ -10,7 +10,7 @@
 
    * :doc:`/references/recipients/index`
 
-.. contents:: Оглавление
+.. contents:: Содержание
    :local:
    :depth: 2
    :backlinks: none
