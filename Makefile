@@ -37,7 +37,7 @@ docker-run = docker run --user $(TARGET_DIR_UID):$(TARGET_DIR_GID) --rm \
 	$(SPHINX_DOCKER_IMAGE) $(1)
 
 .PHONY: all
-all: html pdf ## Собирает все конечные файлы.
+all: clean html pdf ## Собирает все конечные файлы.
 
 .PHONY: clean ## Очищает все результаты сборки.
 clean:
