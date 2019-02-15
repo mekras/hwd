@@ -6,6 +6,8 @@
 .. toctree::
    :maxdepth: 1
 
-   reference/index
-   guide/index
-   rules/index
+.. todo::
+
+   * описание рабочего процесса
+   * руководство по решению задачи
+   * правила выполнения задачи

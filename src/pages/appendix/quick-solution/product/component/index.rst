@@ -7,3 +7,7 @@
    :maxdepth: 1
 
    library/index
+
+.. todo::
+
+   * Какие ещё компоненты могут быть?
