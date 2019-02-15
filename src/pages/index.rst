@@ -9,7 +9,7 @@
 
 .. hint::
 
-   * Нет времени? Воспользуйтесь :doc:`быстрым поиском решения </guides/quick-solution/index>`.
+   * Нет времени? Воспользуйтесь :doc:`быстрым поиском решения </appendix/quick-solution/index>`.
    * Скачать всё одним документом: `PDF </write-docs.pdf>`_.
 
 .. toctree::
@@ -19,7 +19,7 @@
    theory/index
    guides/index
    references/index
-   templates/index
+   appendix/index
    resources
    legal
    todo

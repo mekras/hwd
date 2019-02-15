@@ -9,7 +9,7 @@
 Шаблоны
 -------
 
-* :doc:`README для PHP </templates/product/library/php/readme>`
+* :doc:`README для PHP </appendix/templates/product/library/php/readme>`
 
 
 Справочники
