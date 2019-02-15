@@ -5,6 +5,6 @@
    :maxdepth: 2
 
    why
-   goals
+   goal
    principles
    classification

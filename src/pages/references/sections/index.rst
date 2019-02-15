@@ -10,3 +10,7 @@
    usage
    appendix
    see_also
+
+.. todo::
+
+   * Заключение

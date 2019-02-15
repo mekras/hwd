@@ -11,4 +11,5 @@
    structure/index
    sections/index
    packages/index
+   links
    glossary
