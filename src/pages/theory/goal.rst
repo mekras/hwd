@@ -174,5 +174,4 @@
 
    * :doc:`/theory/principles`
 
-.. [#asylum] Алан Купер. Психбольница в руках пациентов (англ. The Inmates Are Running the Asylum).
-   Перевод: Михаил Зислис, Издательство: Символ-Плюс, Год: 2005, 336с ISBN 5-93286-071-5
+.. include:: /_include/refs/asylum.rst
