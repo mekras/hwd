@@ -9,7 +9,7 @@
 
 .. contents:: Содержание
    :local:
-   :depth: 2
+   :depth: 1
    :backlinks: none
 
 Как узнать цели и не спутать их с задачами
