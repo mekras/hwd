@@ -5,7 +5,9 @@
    :maxdepth: 2
 
    startup
-   recipients
+   readers
+   structure
+   findability
    intro/index
    guide/index
    links

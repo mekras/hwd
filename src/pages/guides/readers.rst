@@ -8,7 +8,7 @@
 
 .. seealso::
 
-   * :doc:`/references/recipients/index`
+   * :doc:`/references/readers/index`
 
 .. contents:: Содержание
    :local:

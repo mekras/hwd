@@ -4,7 +4,7 @@
 .. toctree::
    :maxdepth: 2
 
-   recipients/index
+   readers/index
    articles/index
    formats/index
    locations/index
