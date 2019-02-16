@@ -8,5 +8,5 @@
    :maxdepth: 1
 
    web
-   vcs
+   source-tree
    source

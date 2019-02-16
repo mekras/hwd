@@ -5,21 +5,25 @@
    Аудитория
    Читатели
 
-Читателей
-
-.. toctree::
-   :maxdepth: 1
-
-   team
-
-werfwerf
-
-.. toctree::
-   :maxdepth: 1
-
-   developers
-   users
+В этом справочнике приводится классификация читателей по разным признакам.
 
 .. seealso::
 
-   * :doc:`/guides/readers`
+   * :doc:`/guides/readers` (руководство)
+
+.. rubric:: По отношению к организации-разработчику ПО
+
+.. toctree::
+   :maxdepth: 1
+
+   internal
+   external
+
+.. rubric:: По отношению к программному продукту
+
+.. toctree::
+   :maxdepth: 1
+
+   product-developers
+   developers
+   users

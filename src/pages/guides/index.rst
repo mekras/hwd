@@ -8,7 +8,8 @@
    readers
    structure
    findability
-   intro/index
-   guide/index
    links
    examples
+   intro/index
+   guide/index
+   product/index

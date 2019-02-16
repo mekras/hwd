@@ -8,4 +8,3 @@
    goal
    principles
    how-people-read
-   classification

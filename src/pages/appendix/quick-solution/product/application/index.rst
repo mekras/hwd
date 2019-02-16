@@ -6,7 +6,7 @@
 .. toctree::
    :maxdepth: 1
 
-   team/index
+   product-developers/index
 
 .. todo::
 
