@@ -47,6 +47,14 @@ extensions = [
 # Add any paths that contain templates here, relative to this directory.
 #templates_path = ['_templates']
 
+# A string of reStructuredText that will be included at the beginning of
+# every source file that isread. This is a possible place to add
+# substitutions that should be available in every file.
+rst_prolog = """
+.. raw:: html
+   :file: _include/yandex.metrika.html
+"""
+
 # The suffix(es) of source filenames.
 # You can specify multiple suffix as a list of string:
 #
