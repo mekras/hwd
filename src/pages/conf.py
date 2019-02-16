@@ -12,7 +12,7 @@
 # add these directories to sys.path here. If the directory is relative to the
 # documentation root, use os.path.abspath to make it absolute, like shown here.
 #
-# import os
+import os
 # import sys
 # sys.path.insert(0, os.path.abspath('.'))
 import datetime
@@ -52,8 +52,8 @@ extensions = [
 # substitutions that should be available in every file.
 rst_prolog = """
 .. raw:: html
-   :file: _include/yandex.metrika.html
-"""
+   :file: %s/_include/yandex.metrika.html
+""" % os.path.dirname(os.path.abspath(__file__))
 
 # The suffix(es) of source filenames.
 # You can specify multiple suffix as a list of string:
