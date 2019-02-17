@@ -6,6 +6,8 @@
 
    startup
    readers
+   location
+   format
    structure
    findability
    links
