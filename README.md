@@ -1,5 +1,7 @@
 # [кпд.онлайн](http://кпд.онлайн/)
 
+[![CC BY-NC-SA](https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png)](http://creativecommons.org/licenses/by-nc-sa/4.0/)
+
 [![Состояние сборки](https://travis-ci.org/mekras/hwd.svg?branch=master)](https://travis-ci.org/mekras/hwd)
 
 Этот сайт посвящён написанию документации, связанной с программным обеспечением и его разработкой.
