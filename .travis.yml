@@ -22,4 +22,5 @@ deploy:
         provider: script
         on:
             branch: master
+        skip_cleanup: true
         script: 'rsync --archive htdocs/ hwd@xn--d1alp.xn--80asehdb:htdocs/'
