@@ -12,6 +12,7 @@
    findability
    links
    examples
+   readers/index
    intro/index
    guide/index
    product/index

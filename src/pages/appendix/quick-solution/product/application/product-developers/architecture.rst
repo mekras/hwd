@@ -19,7 +19,7 @@
 Место хранения
 --------------
 
-* :doc:`/references/locations/source-tree`
+* :doc:`/references/locations/vcs`
 
 Формат
 ------

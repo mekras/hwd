@@ -8,5 +8,7 @@
    :maxdepth: 1
 
    web
-   source-tree
+   kb
+   vcs
    source
+   network-folder
