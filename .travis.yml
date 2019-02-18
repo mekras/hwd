@@ -14,4 +14,9 @@ before_install:
 script:
     - make all
 
-
+deploy:
+    -
+        provider: script
+        on:
+            branch: master
+        script: 'rsync --archive htdocs/ hwd@xn--d1alp.xn--80asehdb:htdocs/'
