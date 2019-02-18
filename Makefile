@@ -37,7 +37,7 @@ docker-run = docker run --user $(TARGET_DIR_UID):$(TARGET_DIR_GID) --rm \
 	$(SPHINX_DOCKER_IMAGE) $(1)
 
 .PHONY: all
-all: clean html pdf ## Собирает все конечные файлы.
+all: clean $(TARGET_DIR)/yandex_b294e47024dde966.html | html pdf ## Собирает все конечные файлы.
 
 .PHONY: clean ## Очищает все результаты сборки.
 clean:
@@ -61,3 +61,6 @@ $(TARGET_DIR)/$(DOC_BASENAME).pdf:
 		makeindex $(DOC_BASENAME).idx && \
 		pdflatex $(DOC_BASENAME).tex -interaction batchmode && \
 		mv $(DOC_BASENAME).pdf $(DOCKER_DST_DIR)/")
+
+$(TARGET_DIR)/yandex_%.html: $(SOURCE_DIR)/other/yandex_%.html
+	cp $< $@
