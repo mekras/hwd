@@ -1,0 +1,17 @@
+language: generic
+
+services:
+    - docker
+
+branches:
+    only:
+        - master
+
+before_install:
+    - openssl aes-256-cbc -K $encrypted_6196c450fde8_key -iv $encrypted_6196c450fde8_iv
+        -in deploy_rsa.enc -out deploy_rsa -d
+
+script:
+    - make all
+
+
