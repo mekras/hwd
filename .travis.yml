@@ -23,4 +23,4 @@ deploy:
         on:
             branch: master
         skip_cleanup: true
-        script: 'rsync --archive htdocs/ hwd@xn--d1alp.xn--80asehdb:htdocs/'
+        script: 'rsync --archive --progress ${TRAVIS_BUILD_DIR}/htdocs/ hwd@xn--d1alp.xn--80asehdb:htdocs/'
