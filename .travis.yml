@@ -28,4 +28,4 @@ deploy:
         on:
             branch: master
         skip_cleanup: true
-        script: 'rsync --rsh=ssh --archive --delete-after --compress --progress ${TRAVIS_BUILD_DIR}/htdocs/ hwd@xn--d1alp.xn--80asehdb:htdocs/'
+        script: 'rsync --rsh=ssh --archive --delete-after --compress ${TRAVIS_BUILD_DIR}/htdocs/ hwd@xn--d1alp.xn--80asehdb:htdocs/'
