@@ -5,11 +5,11 @@ README для библиотеки
    README
    Библиотека
 
-В этой статье приводятся рекомендации по написанию введений в виде отдельных статей.
+В этой статье приводятся рекомендации по написанию файлов README для библиотек.
 
 .. seealso::
 
-   * :doc:`/appendix/templates/product/library/index` (шаблоны)
+   * :doc:`Шаблоны документации для библиотек </appendix/templates/product/library/index>`
    * :doc:`/references/articles/readme/index` (справочник)
 
 Форматы
@@ -23,6 +23,8 @@ README для библиотеки
 
 Разделы
 -------
+
+В файл README можно добавить следующие разделы.
 
 #. :doc:`Введение </references/sections/intro>`
 #. :doc:`Оглавление </references/sections/toc>`
