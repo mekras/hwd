@@ -13,5 +13,6 @@
    sections/index
    packages/index
    kb/index
+   tools/index
    links
    glossary
