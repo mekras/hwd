@@ -1,10 +1,7 @@
 Вводную статью (README)
 =======================
 
-.. contents:: Содержание
-   :local:
-   :depth: 2
-   :backlinks: none
+* :doc:`/guides/intro/article`
 
 Шаблоны
 -------
@@ -16,8 +13,3 @@
 -----------
 
 * :doc:`/references/articles/readme/library`
-
-Руководства
------------
-
-* :doc:`/guides/intro/article`

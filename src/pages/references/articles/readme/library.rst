@@ -5,11 +5,12 @@ README для библиотеки
    README
    Библиотека
 
-В этой статье приводятся рекомендации по написанию файлов README для библиотек.
+В статье приводятся рекомендации по написанию файлов README для библиотек.
 
 .. seealso::
 
    * :doc:`Шаблоны документации для библиотек </appendix/templates/product/library/index>`
+   * :doc:`/guides/intro/article`
    * :doc:`/references/articles/readme/index` (справочник)
 
 Форматы
