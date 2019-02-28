@@ -67,7 +67,7 @@
 
     #. Статья предназначена для :doc:`сторонних разработчиков </references/readers/developers>`.
     #. В ней надо рассказать об API заявок.
-    #. Это должен быть :doc:`справочник </references/articles/reference>`.
+    #. Это должен быть :doc:`справочник </references/types/reference>`.
 
 Составьте план
 ^^^^^^^^^^^^^^
