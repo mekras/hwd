@@ -67,5 +67,7 @@
 Ссылки
 ------
 
-* `Why Documentation Is Important <https://www.fastspot.com/publications/why-documentation-is-important/>`_,
-  Tracey Halvorsen (`Fastspot <https://www.fastspot.com/>`_)
+* `Why write docs <http://www.writethedocs.org/guide/writing/beginners-guide-to-docs/#why-write-docs>`_
+  (англ.), Write the Docs.
+* `Why Documentation Is Important <https://www.fastspot.com/publications/why-documentation-is-important/>`_
+  (англ.), Tracey Halvorsen (`Fastspot <https://www.fastspot.com/>`_).

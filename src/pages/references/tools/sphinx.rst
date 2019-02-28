@@ -17,3 +17,10 @@ Sphinx
 
 .. todo::
    Написать про Sphinx.
+
+Ссылки
+------
+
+* `Официальный сайт Sphinx <http://sphinx-doc.org/>`_ (англ.)
+* `Introduction to Sphinx <http://www.writethedocs.org/guide/tools/sphinx/>`_ (англ.), Write the
+  Docs

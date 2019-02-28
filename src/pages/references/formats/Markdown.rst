@@ -45,9 +45,14 @@ Markdown
 * :doc:`ReStructuredText`
 * :doc:`txt`
 
-.. note::
+Ссылки
+------
 
-   В этой статье используются материалы Википедии из статьи
-   `Markdown <https://ru.wikipedia.org/wiki/Markdown>`_,
-   распространяемой на условиях
-   `Creative Commons Attribution-Share-Alike License 3.0 <https://creativecommons.org/licenses/by-sa/3.0/>`_.
+* `Markdown basics <http://www.writethedocs.org/guide/writing/Markdown_basics/>`_ (англ.), Write the
+  Docs.
+
+----
+
+В этой статье используются материалы Википедии из статьи
+`Markdown <https://ru.wikipedia.org/wiki/Markdown>`_, распространяемой на условиях
+`Creative Commons Attribution-Share-Alike License 3.0 <https://creativecommons.org/licenses/by-sa/3.0/>`_.

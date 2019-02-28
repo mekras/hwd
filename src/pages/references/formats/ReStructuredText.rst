@@ -54,9 +54,14 @@ reStructuredText может быть преобразован в :doc:`PDF </ref
 * :doc:`Markdown`
 * :doc:`txt`
 
-.. note::
+Ссылки
+------
 
-   В этой статье используются материалы Википедии из статьи
-   `ReStructuredText <https://ru.wikipedia.org/wiki/ReStructuredText>`_,
-   распространяемой на условиях
-   `Creative Commons Attribution-Share-Alike License 3.0 <https://creativecommons.org/licenses/by-sa/3.0/>`_.
+* `Introduction to reStructuredText <http://www.writethedocs.org/guide/writing/reStructuredText/>`_
+  (англ.), Write the Docs
+
+----
+
+В этой статье используются материалы Википедии из статьи
+`ReStructuredText <https://ru.wikipedia.org/wiki/ReStructuredText>`_, распространяемой на условиях
+`Creative Commons Attribution-Share-Alike License 3.0 <https://creativecommons.org/licenses/by-sa/3.0/>`_.

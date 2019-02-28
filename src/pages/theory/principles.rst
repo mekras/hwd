@@ -96,4 +96,12 @@
 или жаргонными словами, чем более он упорядочен, тем проще будет читателям воспринимать его смысл.
 
 
+Ссылки
+------
+
+* `Documentation Principles <http://www.writethedocs.org/guide/writing/docs-principles/>`_ (англ.),
+  Write the Docs.
+
+----
+
 .. include:: /_include/refs/asylum.rst
