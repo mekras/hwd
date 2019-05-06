@@ -8,3 +8,4 @@
    guide
    rules
    reqspec
+   functions
