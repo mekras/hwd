@@ -34,5 +34,5 @@
    * `сообщить о найденных ошибках или предложить улучшения <https://github.com/mekras/hwd/issues>`_
    * `посмотреть последние изменения <https://github.com/mekras/hwd/commits/master>`_
 
-   .. image:: https://img.shields.io/github/commit-activity/m/mekras/hwd.svg
-   .. image:: https://img.shields.io/github/last-commit/mekras/hwd.svg
+   .. image:: https://img.shields.io/github/commit-activity/m/mekras/hwd.png
+   .. image:: https://img.shields.io/github/last-commit/mekras/hwd.png
