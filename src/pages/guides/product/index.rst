@@ -5,3 +5,5 @@
    :maxdepth: 1
 
    architecture
+   functions
+   api

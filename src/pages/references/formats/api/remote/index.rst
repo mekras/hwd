@@ -1,11 +1,11 @@
-Форматы документации
+API удалённых систем
 ====================
 
 .. index::
    Формат документации
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
 
-   common/index
-   api/index
+   AsyncAPI
+   OpenAPI

@@ -7,11 +7,11 @@
    :maxdepth: 1
 
    product-developers/index
+   outer-developers/index
    organization/index
 
 .. todo::
 
    * для других команд
-   * для сторонних разработчиков
    * для конечных пользователей
 
