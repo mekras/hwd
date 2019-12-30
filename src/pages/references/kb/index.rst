@@ -5,8 +5,7 @@
    База знаний
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
 
-.. todo::
-
-   Написать справку по базам знаний.
+   AtlassianConfluence
+   DokuWiki
