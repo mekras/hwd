@@ -18,9 +18,9 @@ README для библиотеки
 
 Предпочтительными форматами являются:
 
-* :doc:`Markdown </references/formats/Markdown>`
-* :doc:`ReStructuredText </references/formats/ReStructuredText>`
-* :doc:`Простой текст </references/formats/txt>`
+* :doc:`Markdown </references/formats/common/Markdown>`
+* :doc:`ReStructuredText </references/formats/common/ReStructuredText>`
+* :doc:`Простой текст </references/formats/common/txt>`
 
 Разделы
 -------

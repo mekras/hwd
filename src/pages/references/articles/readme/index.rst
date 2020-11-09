@@ -23,9 +23,9 @@ README
 
 Распространённые форматы:
 
-* :doc:`TXT </references/formats/txt>` (`README.txt`)
-* :doc:`Markdown </references/formats/Markdown>` (`README.md`)
-* :doc:`ReStructuredText </references/formats/ReStructuredText>` (`README.rst`)
+* :doc:`TXT </references/formats/common/txt>` (`README.txt`)
+* :doc:`Markdown </references/formats/common/Markdown>` (`README.md`)
+* :doc:`ReStructuredText </references/formats/common/ReStructuredText>` (`README.rst`)
 
 
 Виды README

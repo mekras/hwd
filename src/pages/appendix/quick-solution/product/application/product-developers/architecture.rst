@@ -24,8 +24,8 @@
 Формат
 ------
 
-* :doc:`/references/formats/Markdown`
-* :doc:`/references/formats/ReStructuredText`
+* :doc:`/references/formats/common/Markdown`
+* :doc:`/references/formats/common/ReStructuredText`
 
 Руководства
 -----------
