@@ -23,17 +23,18 @@ DOC_BASENAME := write-docs
 ## Образ Docker со Sphinx.
 SPHINX_DOCKER_IMAGE := mekras/sphinx-doc:latest
 
-## Папка внутри котнейра, куда монтировать папку src.
-DOCKER_SRC_DIR := /opt/docs
-## Папка внутри котнейра, куда монтировать папку htdocs.
+## Папка внутри контейнера, куда монтировать папку src.
+DOCKER_SRC_DIR := /docs
+## Папка внутри контейнера, куда монтировать папку htdocs.
 DOCKER_DST_DIR := /opt/build
 
 ## Выполняет единичную команду оболочки в контейнере.
 ##
 ## @param $(1) Команда, которую надо выполнить.
+## @param $(2) Дополнительные опции для docker.
 ##
 docker-run = docker run --user $(TARGET_DIR_UID):$(TARGET_DIR_GID) --rm \
-	-v $(PROJECT_DIR)/src/pages:/opt/docs -v $(TARGET_DIR):/opt/build \
+	-v $(PROJECT_DIR)/src:$(DOCKER_SRC_DIR) $(2) \
 	$(SPHINX_DOCKER_IMAGE) $(1)
 
 .PHONY: all
@@ -48,19 +49,18 @@ start-server: ## Запускает сервер разработки.
 	docker-compose -f docker-compose.dev.yml up
 
 .PHONY: html
-html: ## Собирает документацию в HTML.
-	$(call docker-run,sphinx-build $(DOCKER_SRC_DIR) $(DOCKER_DST_DIR))
+html: | clean ## Собирает документацию в HTML.
+	$(call docker-run,make html,-v $(TARGET_DIR):$(DOCKER_DST_DIR))
+	mv -f $(TARGET_DIR)/html/* $(TARGET_DIR)/
+	-rm -rf $(TARGET_DIR)/doctrees $(TARGET_DIR)/html
 
 .PHONY:
 pdf: $(TARGET_DIR)/$(DOC_BASENAME).pdf ## Создаёт документ PDF.
 
 $(TARGET_DIR)/$(DOC_BASENAME).pdf:
-	$(call docker-run,sh -c "cd /tmp && \
-		sphinx-build -b latex $(DOCKER_SRC_DIR) . && \
-		pdflatex $(DOC_BASENAME).tex -interaction batchmode && \
-		makeindex $(DOC_BASENAME).idx && \
-		pdflatex $(DOC_BASENAME).tex -interaction batchmode && \
-		mv $(DOC_BASENAME).pdf $(DOCKER_DST_DIR)/")
+	$(call docker-run,make latexpdf,-v $(TARGET_DIR):$(DOCKER_DST_DIR))
+	mv $(TARGET_DIR)/latex/$(DOC_BASENAME).pdf $(TARGET_DIR)/
+	-rm -rf $(TARGET_DIR)/doctrees $(TARGET_DIR)/latex
 
 $(TARGET_DIR)/yandex_%.html: $(SOURCE_DIR)/other/yandex_%.html
 	cp $< $@
