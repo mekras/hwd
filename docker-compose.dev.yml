@@ -14,4 +14,4 @@ services:
         volumes:
             - './src/pages:/opt/docs:ro'
         working_dir: '/opt/docs'
-        command: sphinx-autobuild --poll -H 0.0.0.0 /opt/docs /var/www/html/pages
+        command: sphinx-autobuild --host 0.0.0.0 /opt/docs /var/www/html/pages
